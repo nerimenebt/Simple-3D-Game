@@ -123,7 +123,7 @@ class GameViewController: UIViewController, SCNSceneRendererDelegate {
     
     @objc func initView()
     {
-        gameView = self.view as! SCNView
+        gameView = (self.view as! SCNView)
         gameView.allowsCameraControl = true
         gameView.autoenablesDefaultLighting = true
         gameView.delegate = self
